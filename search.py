@@ -29,7 +29,7 @@ for page_num in range(0, 10):  # 10 sayfa (0-9 arasındaki sayfalar)
         if href and href.startswith('http'):
             all_page_links.append(href)
 
-# Sonuçları dosyaya keydet
+# Sonuçları dosyaya kaydet
 with open('google_search_results.txt', 'w', encoding='utf-8') as file:
     for page_url in all_page_links:
         try:
